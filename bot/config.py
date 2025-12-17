@@ -16,7 +16,7 @@ SERVER_URL = os.getenv('SERVER_URL', 'http://localhost:10000')
 FLASK_PORT = int(os.getenv('FLASK_PORT', '10000'))
 
 # Database
-DATABASE_PATH = os.getenv('DATABASE_PATH', 'data/bot_database.db')
+DATABASE_PATH = os.getenv('DATABASE_PATH', 'tmp/bot_database.db')
 
 # Monetag
 MONETAG_ZONE_ID = os.getenv('MONETAG_ZONE_ID', '10337592')
