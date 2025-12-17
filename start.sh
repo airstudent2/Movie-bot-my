@@ -1,14 +1,8 @@
+
 #!/bin/bash
 
-echo "🚀 Starting Movie Nest Bot System..."
-
-# Start Telegram Bot
-echo "🤖 Starting Telegram Bot..."
+# 1. Bot start করো ব্যাকগ্রাউন্ডে (& চিহ্ন খুব জরুরি)
 python -m bot.main &
 
-# Give bot time to start
-sleep 5
-
-# Start Flask Server
-echo "🌐 Starting Flask Server..."
-exec gunicorn server.app:app --bind 0.0.0.0:${PORT:-10000}
+# 2. Flask Server start করো
+gunicorn server.app:app --bind 0.0.0.0:$PORT
