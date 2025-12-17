@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: movie-nest-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: sh start.sh
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: API_ID
+        value: 37081556
+      - key: API_HASH
+        value: 61e4c99b0b400d0399ff96864aecab20
+      - key: BOT_TOKEN
+        value: 8331138127:AAHMMhcWUd1jHbirR_yrHfpYRK_X0VzinQU
+      - key: ADMIN_IDS
+        value: 8128572225
+      - key: MONETAG_ZONE_ID
+        value: 10337592
+      - key: FLASK_PORT
+        value: 10000
