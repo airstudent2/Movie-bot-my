@@ -1,3 +1,4 @@
+
 services:
   - type: web
     name: movie-nest-bot
@@ -19,3 +20,7 @@ services:
         value: 10337592
       - key: FLASK_PORT
         value: 10000
+      - key: SERVER_URL
+        value: https://movie-nest-bot.onrender.com
+      - key: DATABASE_PATH
+        value: /tmp/bot_database.db
